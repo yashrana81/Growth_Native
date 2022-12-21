@@ -39,7 +39,7 @@ class EssayForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'Please write an essay about your favorite DOM element.'
+      value: 'Please enter your name.'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -51,7 +51,7 @@ class EssayForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.value);
+    alert('A name has been entered: ' + this.state.value);
     event.preventDefault();
   }
 
